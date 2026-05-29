@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>LOG IN</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2f5;
+    }
+
+    table {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
+    }
+
+    td {
+        padding: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    input {
+        width: 180px;
+        padding: 7px;
+        border-radius: 4px;
+        border: 1px solid #bbb;
+    }
+
+    input:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+
+    button {
+        padding: 8px 14px;
+        margin: 5px;
+        border: none;
+        border-radius: 4px;
+        background-color: #2d6a8e;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #1f4e6b;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: #2c3e50;
+    }
+</style>
+</head>
+<body>
+    
+    <form method="POST" name="f">
+        <table border="4" align="center" cellpadding="5" cellspacing="0">
+            
+            <tr>
+                <td>ID</td>
+                <td><input type="text" name="t1"></td>
+            </tr>
+
+            <tr>
+                <td>PASSWORD</td>
+                <td><input type="password" name="t2"></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" formaction="/login">LOG IN</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

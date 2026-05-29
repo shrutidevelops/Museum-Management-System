@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>MENU</title>
+<style>
+  body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    margin: 0;
+    padding-top: 40px; 
+}
+
+   h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #2c3e50;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+    
+    
+
+    form {
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        width: 200px;
+        padding: 10px;
+        margin: 8px;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        background-color: #2c3e50;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1a252f;
+    }
+</style>
+<body>
+    <div style="text-align:center;">
+        <h1>MUSEUM MANAGEMENT SYSTEM</h1>
+    </div>
+</div>
+   
+<form name="f" method="POST" style="text-align:center;">
+
+        <input type="submit" value="BASIC TICKET" formaction="/basic_tkt">
+        <input type="submit" value="COMBO TICKET" formaction="/combo_tkt">
+        <input type="submit" value="DRAMA TICKET" formaction="/drama_tkt">
+        <input type="submit" value="JEWELLERY" formaction="/jewellery">
+        <input type="submit" value="LIBRARY BOOK ENTRY" formaction="/library_book_entry">
+        <input type="submit" value="LIBRARY BOOK ISSUE" formaction="/library_book_issue">
+        <input type="submit" value="LIBRARY CD ISSUE" formaction="/library_cd_issue">
+        <input type="submit" value="LIBRARY CD ENTRY" formaction="/library_cds_entry">
+        <input type="submit" value="LIBRARY LOST BOOK" formaction="/library_lost_book">
+        <input type="submit" value="LIBRARY LOST CD" formaction="/library_lost_cd">
+        <input type="submit" value="LIBRARY MEMBERSHIP" formaction="/library_membership">
+        <input type="submit" value="MUSEUM EXHIBITION" formaction="/museum_exhibition">
+        <input type="submit" value="MUSEUM MASTER" formaction="/museum_master">
+        <input type="submit" value="MUSEUM MEMBERSHIP" formaction="/museum_membership">
+        <input type="submit" value="POTTERY" formaction="/pottery">
+        <input type="submit" value="SCULPTURE" formaction="/sculpture">
+        <input type="submit" value="STONE" formaction="/stone">
+        <input type="submit" value="TEXTILES" formaction="/textiles">
+</form>
+</body>

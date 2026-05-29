@@ -1,0 +1,89 @@
+<head>
+    <title>MUSEUM MASTER SEARCH</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    td {
+        padding: 8px;
+        text-align: center;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e6f2ff;
+    }
+
+    input[type="button"] {
+        background-color: #2c3e50;
+        color: white;
+        padding: 8px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+        background-color: #1a252f;
+    }
+</style>
+</head>
+<body>
+    <table border="2" align="center">
+     <tr>
+      <th>AN ID</th>
+      <th>ANTIQUE NAME</th>
+      <th>DOREG</th>
+      <th>CONDITION</th>
+      <th>SOURCE</th>
+      <th>ESTIMATED COST</th>
+      <th>CON DEPT</th>
+      <th>CON PERSON</th>
+      <th>MUSEUM MEM ID</th>
+      <th>LIBRARY MEM ID</th>
+      <th>TICKET NO</th>
+      <th>TICKET TYPE</th>
+      
+     </tr>
+     {% for col in data %}
+     <tr>
+      <td>{{col[0]}}</td>
+      <td>{{col[1]}}</td>
+      <td>{{col[2]}}</td>
+      <td>{{col[3]}}</td>
+      <td>{{col[4]}}</td>
+      <td>{{col[5]}}</td>
+      <td>{{col[6]}}</td>
+      <td>{{col[7]}}</td>
+      <td>{{col[8]}}</td>
+      <td>{{col[9]}}</td>
+      <td>{{col[10]}}</td>
+      <td>{{col[11]}}</td>
+
+     </tr>
+     {% endfor %}
+    </table>
+    <br>
+    <center>
+        <input type="button" value="Print" onclick="window.print()">
+    </center>
+</body>

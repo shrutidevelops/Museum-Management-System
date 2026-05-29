@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>POTTERY TABLE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        table {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+        }
+
+        td {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 180px;
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        button {
+       padding: 8px 12px;
+       margin: 5px;
+       border: none;
+       border-radius: 5px;
+       background-color: #1f3a5f; /* darker blue */
+       color: white;
+       cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #162a44;
+    }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="POST" name="f">
+        <table border="4" align="center" cellpadding="5" cellspacing="0">
+            
+            <tr>
+                <td>AN ID</td>
+                <td><input type="number" name="t1"></td>
+            </tr>
+
+            <tr>
+                <td>POTTERY NAME</td>
+                <td><input type="text" name="t2"></td>
+            </tr>
+
+            <tr>
+                <td>AGE</td>
+                <td><input type="number" name="t3"></td>
+            </tr>
+
+            <tr>
+                <td>DOREG</td>
+                <td><input type="text" name="t4"></td>
+            </tr>
+
+            <tr>
+                <td>COLOR</td>
+                <td><input type="text" name="t5"></td>
+            </tr>
+
+            <tr>
+                <td>POTTERY CONDITION</td>
+                <td><input type="text" name="t6"></td>
+            </tr>
+
+            <tr>
+                <td>EST COST</td>
+                <td><input type="number" name="t7"></td>
+            </tr>
+
+            <tr>
+                <td>FUTURE LIFE</td>
+                <td><input type="number" name="t8"></td>
+            </tr>
+
+            <tr>
+                <td>TYPE</td>
+                <td><input type="text" name="t9"></td>
+            </tr>
+
+            <tr>
+                <td>SOURCE</td>
+                <td><input type="text" name="t10"></td>
+            </tr>
+
+            <tr>
+                <td>CONTACT PERSON</td>
+                <td><input type="text" name="t11"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" onclick="new1()">New</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/save">Save</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/update">Update</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/delete">Delete</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/allsearch">Allsearch</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/psearch">PSearch</button>
+                    <button type="submit" formaction="http://127.0.0.1:5005/spsearchformopen">Special Search</button>
+                    <button type="submit" formaction="http://127.0.0.1:5020/menu">Home</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+<script>
+function new1()
+{
+    f.t1.value=""
+    f.t2.value=""
+    f.t3.value=""
+    f.t4.value=""
+    f.t5.value=""
+    f.t6.value=""
+    f.t7.value=""
+    f.t8.value=""
+    f.t9.value=""
+    f.t10.value=""
+}
+</script>
+
+</body>
+</html>

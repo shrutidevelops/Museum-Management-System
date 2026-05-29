@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPECIAL SEARCH</title>
+    <style>
+    body {
+        font-family: Arial;
+        background-color: #f5f5f5;
+    }
+
+    h2 {
+        background-color: #333;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    form {
+        background-color: white;
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    select, input[type="text"] {
+        width: 80%;
+        padding: 6px;
+        margin-top: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #222; /* darker button */
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+    <!-- Library Lost Cd-->
+     <h2 style="text-align:center;">LIBRARY LOST CD SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="cd_id">CD ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" formaction="http://127.0.0.1:5001/spsearch"><br><br>
+    </form>
+
+    <!-- Basic Tkt Table-->
+     <h2 style="text-align:center;">BASIC TICKET SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="date_of_visit">DATE OF VISIT</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" formaction="http://127.0.0.1:5015/spsearch">
+    </form>
+
+   <!-- Combo Tkt Table-->
+     <h2 style="text-align:center;">COMBO TICKET SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="drama_name">DRAMA NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" formaction="http://127.0.0.1:5006/spsearch">
+    </form>
+
+    <!-- Drama Tkt Table-->
+     <h2 style="text-align:center;">DRAMA TICKET SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="drama_name">DRAMA NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" formaction="http://127.0.0.1:5016/spsearch">
+    </form>
+
+<!-- Jewellery Table-->
+     <h2 style="text-align:center;">JEWELLERY SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="jewellery_name">JEWELLERY NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5017/spsearch">
+    </form>
+
+    <!-- Library book entry Table-->
+     <h2 style="text-align:center;">LIBRARY BOOK ENTRY SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="b_id">BOOK ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5007/spsearch">
+    </form>
+
+    <!-- Library book issue Table-->
+     <h2 style="text-align:center;">LIBRARY BOOK ISSUE SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="b_id">BOOK ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5002/spsearch">
+    </form>
+
+    <!-- Library cd issue Table-->
+     <h2 style="text-align:center;">LIBRARY CD ISSUE SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="cd_id">CD ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5012/spsearch">
+    </form>
+
+    <!-- Library cd entry Table-->
+     <h2 style="text-align:center;">LIBRARY CD ENTRY SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="cd_id">CD ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5011/spsearch">
+    </form>
+
+     <!-- Library lost book Table-->
+     <h2 style="text-align:center;">LIBRARY LOST BOOK SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="b_id">BOOK ID</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5003/spsearch">
+    </form>
+
+<!-- Library membership Table-->
+     <h2 style="text-align:center;">LIBRARY MEMBERSHIP SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="mu_libmem_id">LIBRARY MEM ID</option>
+            <option value="mem_name">MEMBER NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5008/spsearch">
+    </form>
+
+<!-- Museum exhibition Table-->
+     <h2 style="text-align:center;">MUSEUM EXHIBITION SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="s_no">SERIAL NO</option>
+            <option value="exhi_name">EXHIBITION NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5010/spsearch">
+    </form>
+
+<!-- Museum master Table-->
+     <h2 style="text-align:center;">MUSEUM MASTER SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="antiq_name">ANTIQUE NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5004/spsearch">
+    </form>
+
+<!-- Museum membership Table-->
+     <h2 style="text-align:center;">MUSEUM MEMBERSHIP SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="mu_mem_id">MEMBERSHIP ID</option>
+            <option value="mem_name">MEMBER NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5009/spsearch">
+    </form>
+
+<!-- Pottery Table-->
+     <h2 style="text-align:center;">POTTERY SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="pottery_name">POTTERY NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5005/spsearch">
+    </form>
+
+<!-- Sculpture Table-->
+     <h2 style="text-align:center;">SCULPTURE SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="name">SCULPTURE NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5018/spsearch">
+    </form>
+
+<!-- Stone Table-->
+     <h2 style="text-align:center;">STONE SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="stone_name">STONE NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5013/spsearch">
+    </form>
+
+<!-- Textiles Table-->
+     <h2 style="text-align:center;">TEXTILES SEARCH</h2>
+    <form action="/submit" method="post" align="center">
+        <!-- Dropdown -->
+        <label for="options">CHOOSE THE FIELD NAME:</label>
+        <select id="options" name="col">
+            <option value="an_id">AN ID</option>
+            <option value="textile_name">TEXTILE NAME</option>
+        </select>
+        <br><br>
+        <!-- Textbox -->
+        <label for="textbox">SEARCH:</label>
+        <input type="text" id="textbox" name="t1">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" formaction="http://127.0.0.1:5014/spsearch">
+    </form>
+
+</body>
+</html>
