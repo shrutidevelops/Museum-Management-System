@@ -1,6 +1,6 @@
-<img width="1593" height="557" alt="Screenshot 2026-05-29 144923" src="https://github.com/user-attachments/assets/5c45e3dc-3efa-441e-bb60-77142e443e78" />
-<img width="1856" height="858" alt="Screenshot 2026-04-27 140422" src="https://github.com/user-attachments/assets/67e3b3b9-c0ea-46cb-96e4-6683247919e9" />
-<img width="1042" height="702" alt="Screenshot 2026-05-29 144953" src="https://github.com/user-attachments/assets/c2aa7a86-dfdf-4ab8-a817-c4b27844d939" />
+<img width="1112" height="682" alt="Screenshot 2026-06-18 171458" src="https://github.com/user-attachments/assets/09859788-3fe2-4e60-ae98-2583bf99edbd" />
+<img width="1538" height="870" alt="Screenshot 2026-06-18 162433" src="https://github.com/user-attachments/assets/6b943130-4bf1-488b-99f9-152e7e71aac2" />
+<img width="840" height="893" alt="Screenshot 2026-06-18 162448" src="https://github.com/user-attachments/assets/f687d3ac-3cdb-4a70-b2ca-f4cc18ccc384" />
 <img width="1741" height="307" alt="Screenshot 2026-05-29 145100" src="https://github.com/user-attachments/assets/39fd6fd5-1095-4e11-a95d-ff13717dfd85" />
 # Museum Management System
 
