@@ -2,56 +2,79 @@
 <head>
     <title>LIBRARY LOST BOOK</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-        }
+       body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe7f3);
+    margin: 0;
+    padding: 30px;
+}
 
-        table {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-        }
+h2 {
+    text-align: center;
+    color: #1f3a5f;
+    font-size: 32px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
 
-        td {
-            padding: 10px;
-            font-size: 14px;
-        }
+table {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    padding: 15px;
+    width: 550px;
+}
 
-        input {
-            width: 180px;
-            padding: 6px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
+td {
+    padding: 12px;
+    font-size: 15px;
+    color: #333;
+}
 
-        input:focus {
-            border-color: #007BFF;
-            outline: none;
-        }
+td:first-child {
+    font-weight: bold;
+    color: #1f3a5f;
+}
 
-        button {
-       padding: 8px 12px;
-       margin: 5px;
-       border: none;
-       border-radius: 5px;
-       background-color: #1f3a5f; /* darker blue */
-       color: white;
-       cursor: pointer;
-    }
+input {
+    width: 220px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
 
-    button:hover {
+input:focus {
+    border-color: #1f3a5f;
+    box-shadow: 0 0 5px rgba(31,58,95,0.3);
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f3a5f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
     background-color: #162a44;
-    }
+    transform: translateY(-2px);
+}
 
-        h2 {
-            text-align: center;
-            margin-top: 20px;
-        }
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
     </style>
 </head>
 <body>
-    
+    <h2>LIBRARY LOST BOOK DETAILS</h2>
     <form method="POST" name="f">
         <table border="4" align="center" cellpadding="5" cellspacing="0">
             
